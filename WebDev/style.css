@@ -53,4 +53,38 @@
     font-size: xx-large;
 }
 
+table.center {
+  border:2px solid red;margin-left:auto;margin-right:auto; transform: translate(0%, 50%); 
+  
+  
+}
 
+th.rank {
+  background-color: black; text-align: center; color: white; 
+  border-top: 2px; border-bottom: 2px; padding-top: 3px; padding-bottom: 3px;
+}
+
+th.country {
+  background-color: white; text-align: left; color: black;
+  border-top: 2px; border-bottom: 2px; padding-top: 3px; padding-bottom: 3px;
+}
+
+th.gold {
+  background-color: gold; text-align: center; color: black;
+  border-top: 2px; border-bottom: 2px; padding-top: 3px; padding-bottom: 3px;
+}
+
+th.silver {
+  background-color: silver; text-align: center; color: black;
+  border-top: 2px; border-bottom: 2px; padding-top: 3px; padding-bottom: 3px;
+}
+
+th.bronze {
+  background-color: darkgoldenrod; text-align: center; color: black; 
+  border-top: 2px; border-bottom: 2px; padding-top: 3px; padding-bottom: 3px;
+} 
+
+th.total {
+  background-color: greenyellow; text-align: center; color: black;
+  border-top: 2px; border-bottom: 2px; padding-top: 3px; padding-bottom: 3px;
+}
