@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="style.css"></script>
+<body style="background-color: green;" id="bdy">
+
+
+
+<button type="button" id="demo" onfocus="myFunction()" onmouseover="myFunction()" onmouseleave="pressMe()" 
+onblur="pressMe()" onclick="document.getElementById('bdy').style.backgroundColor = red">Press me!</button>
+
+<script>
+function myFunction() {
+    document.getElementById('demo').innerHTML = /Don't press me/;
+}
+function pressMe() {
+    document.getElementById('demo').innerHTML = /Press Me!/;
+}
+</script>
+
+</body>
+</html> 
+

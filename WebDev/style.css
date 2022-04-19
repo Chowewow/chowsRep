@@ -88,3 +88,9 @@ th.total {
   background-color: greenyellow; text-align: center; color: black;
   border-top: 2px; border-bottom: 2px; padding-top: 3px; padding-bottom: 3px;
 }
+
+body.clicked {
+  background-color: red;
+  text-align: center;
+  text-align: ;
+}
