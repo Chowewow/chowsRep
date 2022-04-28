@@ -77,14 +77,14 @@
         let index = 0;
         while (index < x.length) {
           if (x[index].id == "lecture") {
-            if (parseInt(x[index].value) != NaN) {
+            if (x[index].value != "") {
               lectureHours += parseInt(x[index].value);
             } else {
               lectureHours += 0;
             }
           }
           if (x[index].id == "lab") {
-            if (parseInt(x[index].value) != NaN) {
+            if (x[index].value != "") {
               labs += parseInt(x[index].value);
             } else {
               labs += 0;
@@ -94,12 +94,12 @@
         }
         let lectureRatio = 0;
         let labRatio = 0;
-        if (lectureHours/days == NaN) {
+        if (lectureHours/days == NaN || lectureHours/days == 0) {
           lectureRatio = 0;
         } else {
           lectureRatio = lectureHours/days;
         }
-        if (labs/days == NaN) {
+        if (labs/days == NaN || labs/days == 0) {
           labRatio = 0;
         } else {
           labRatio = labs/days;
