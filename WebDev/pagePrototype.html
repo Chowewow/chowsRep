@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="btn" onclick="createBody()">New body</button>
+    <button onclick="addFinder()">Add Finder</button>
+  </body>
+  <script>
+    function createBody() {
+      const titleNode = document.createElement("h1");
+      const titleText = document.createTextNode(
+        prompt("Enter page title: ", "Title")
+      );
+      titleNode.appendChild(titleText);
+      document.body.appendChild(titleNode);
+      const headingNode = document.createElement("h2");
+      const headingText = document.createTextNode(
+        prompt("Enter page heading: ", "Heading")
+      );
+      headingNode.appendChild(headingText);
+      document.body.appendChild(headingNode);
+      const paragraphNode = document.createElement("p");
+      const paragraphText = document.createTextNode(
+        prompt("Enter text: ", "Text")
+      );
+      paragraphNode.appendChild(paragraphText);
+      document.body.appendChild(paragraphNode);
+      const picNode = document.createElement("img");
+      picNode.setAttribute("src", prompt("Enter url: ", "url"));
+      document.body.appendChild(picNode);
+    }
+
+    function addFinder() {
+      const inputBox = document.createElement("input");
+      document.body
+        .appendChild(inputBox)
+        .addEventListener("input", function () {
+          let elements = document.body.getElementsByTagName('*');
+          let index = 0;
+          let regex = new RegExp(`${inputBox.value}`, 'gd');
+          while(index < elements.length){
+            console.log(elements[index]);
+            let result = regex.exec(elements[index].innerHTML);
+            console.log(result[0]);
+            index++;
+          }
+          
+        });
+    }
+  </script>
+</html>
