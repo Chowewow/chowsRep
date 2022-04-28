@@ -29,7 +29,7 @@
     }
   </style>
   <body>
-    <div style=" margin: auto; max-width: min-content;">
+    <div style=" margin: auto; max-width: min-content; position: relative;">
       <div>
           <p>Calculates how many lectures and labs you have to do per day over a specified number of days</p>
         <table id="myTable">
@@ -104,7 +104,6 @@
         } else {
           labRatio = labs/days;
         }
-        //still printing NaN -.-
         document.getElementById(
           "total"
         ).innerHTML = `${lectureHours} hours of lectures and 
