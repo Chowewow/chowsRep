@@ -77,10 +77,10 @@ def vowel_consonant_ratio(sentence):
     new_sentence = proper_capitalization(sentence)
     vowels = 0
     consonants = 0
-    for ch in new_sentence:
-        if ch.isalpha() and ch in ('a','e','i','o','u'):
+    for char in new_sentence:
+        if char.isalpha() and char in ("aeiou"):
             vowels += 1
-        elif ch.isalpha() and ch not in ('a','e','i','o','u'):
+        elif char.isalpha() and char not in ("aeiou"):
             consonants += 1
     if consonants == 0 or vowels == 0:
         return 0.0
@@ -269,5 +269,6 @@ def word_ranking(corpus, n, sort_index):
         return []
     return tuple_list[0:n]
 
-def take_second(x):
-    return x[1]
+def take_second(elem):
+    '''returns second element'''
+    return elem[1]
