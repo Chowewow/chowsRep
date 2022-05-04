@@ -271,4 +271,4 @@ def word_ranking(corpus, n, sort_index):
 
 def take_second(elem):
     '''returns second element'''
-    return elem[1]
+    return elem[1]  
