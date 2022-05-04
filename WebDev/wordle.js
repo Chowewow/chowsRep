@@ -34,9 +34,25 @@ function wordleLab(target, value) {
       array.split().forEach((v) => v == value && count++ && console.log(v));
       return count;
     }
-    console.log(getOccurrence(first,'e'));
+    console.log(getOccurrence(first, "e"));
     return answer;
   }
+}
+
+function getTime() {
+  let xhttp = new XMLHttpRequest();
+  xhttp.onload = function () {
+    document.getElementById("time").innerHTML = this.response;
+  };
+  xhttp.open("GET", "https://drtnf.net/wordle_time_left", true);
+  xhttp.send();
+}
+
+function getOutcome() {
+  let xhttp = new XMLHttpRequest();
+  xhttp.onload = function () {console.log(this.response)};
+  xhttp.open("GET", `https://drtnf.net/wordle_guess?guess=${x}`, true);
+  xhttp.send();
 }
 
 $(window).on("load", () => {
