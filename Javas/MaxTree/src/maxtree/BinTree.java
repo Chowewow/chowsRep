@@ -105,6 +105,7 @@ public class BinTree<E> extends BinaryTree<E> {
 		// TODO code application logic here
 		BinTree myTree = new BinTree();
 		
+		
 
 	}
 }

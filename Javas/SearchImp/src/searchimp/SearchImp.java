@@ -8,14 +8,43 @@ package searchimp;
 /**
  *
  * @author chow
+ * 
  */
-public class SearchImp {
+import CITS2200.Graph;
+import CITS2200.Search;
+import java.util.Queue;
 
-	/**
-	 * @param args the command line arguments
-	 */
-	public static void main(String[] args) {
-		// TODO code application logic here
-	}
+//getEdgeMatrix() (a graph method) must be implemented
+//as well as get number of vertices to determine the array size (for the matrix I think)
+public class SearchImp implements Search {
+    public int[] getConnectedTree(Graph testGraph, int startVertex) {
+        // TODO: Implement getConnectedTree.
+	Queue<Integer> q = new Queue<>();
+	q.offer(startVertex);
+	int graphSize = testGraph.getNumberOfVertices();
+	testGraph.
 	
+	while(!q.isEmpty()){
+		q.remove()
+	}
+	testGraph.getEdgeMatrix()
+	
+		
+	return null;
+    }
+
+    public int[] getDistances(Graph g, int startVertex) {
+        // TODO: Implement getDistances.
+	return null;
+    }
+    
+    public int[][] getTimes(Graph g, int startVertex) {
+        // TODO: Implement getTimes.
+        return null;
+    }
+    public void dfs(){
+	    
+    }
 }
+
+
